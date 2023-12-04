@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="emulate-barcode-scanner" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>emulate-barcode-scanner</name>
+    <js-module name="emulateBarcodeScanner" src="www/emulate-barcode-scanner.js">
+        <clobbers target="cordova.plugins.barcodeScanner" />
+    </js-module>
+    <asset src="www/flip-camera.png" target="plugins/emulate-barcode-scanner/www/flip-camera.png" />
+    <asset src="www/cancel.png" target="plugins/emulate-barcode-scanner/www/cancel.png" />
+    <asset src="www/torch.png" target="plugins/emulate-barcode-scanner/www/torch.png" />
+</plugin>

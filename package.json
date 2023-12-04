@@ -1,0 +1,11 @@
+{
+  "name": "emulate-barcode-scanner",
+  "version": "1.0.0",
+  "description": "Emulation of phonegap-plugin-barcodescanner using cordova-plugin-qrscanner-12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
