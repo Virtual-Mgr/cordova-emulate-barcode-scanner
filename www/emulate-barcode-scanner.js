@@ -20,8 +20,8 @@ function deferredPromise() {
     };
 }
 
-const qrOverlayTemplate = `
-<div class="qr-overlay">
+// Avoid CRLF before the < to avoid the JQuery warning
+const qrOverlayTemplate = `<div class="qr-overlay">
     <div class="qr-overlay-porthole"></div>
     <div class="qr-overlay-instructions">
         Position QR code within the square
@@ -40,8 +40,7 @@ const qrOverlayTemplate = `
 </div>
 `;
 
-const qrOverlayStyle = `
-.qr-overlay {
+const qrOverlayStyle = `.qr-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -135,10 +134,11 @@ const qrOverlayStyle = `
     background-color: rgba(80, 80, 80, 0.8);
 }
 
-/* Disables pinch-zooming and scrolling */
+/* Disables pinch-zooming and scrolling, LUCIFER-937 force background-image none */
 body {
     touch-action: manipulation;
     overflow: hidden;
+    background-image: none !important;
 }
 `;
 
